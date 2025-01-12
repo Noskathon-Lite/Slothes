@@ -4,6 +4,8 @@ from ultralytics import YOLO
 
 model = YOLO('yolov8n.pt')
 
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='C:\Users\purri\OneDrive\Documents\codee\learning\random\tracker\yolov5\weights\yolov5s.pt', source='local')
+
 red_lower = np.array([170, 100, 100])
 red_upper = np.array([180, 255, 255])
 yellow_lower = np.array([20, 100, 100])
